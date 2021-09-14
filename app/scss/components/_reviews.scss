@@ -1,0 +1,101 @@
+.reviews {
+  &-slider {
+    padding: 0 30px;
+  }
+}
+
+.slide-item {
+  &__top {
+    background: #FAFAFA;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 13px 30px 10px;
+
+    &-box {
+      display: flex;
+      align-items: center;
+    }
+
+    &-img {
+      width: 101px;
+      margin-right: 10px;
+    }
+
+    &-count {
+      font: 400 14px / 23px $font;
+      color: #a7a7a7;
+    }
+  }
+
+  &__user {
+    padding: 27px 0 22px;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+
+    &-name {
+      font: 500 18px / 24px $font;
+    }
+
+    &-data {
+      font: 500 14px / 23px $font;
+      color: #a7a7a7;
+    }
+  }
+
+  &__review {
+    padding: 22px 22px 30px;
+    background: #FAFAFA;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+
+    &::after {
+      position: absolute;
+      top: -17px;
+      left: 18px;
+      content: '';
+      background-color: #FAFAFA;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      width: 31px;
+      height: 20px;
+    }
+
+    &-star {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font: 400 18px / 22px $font;
+      color: $black;
+      margin-bottom: 22px;
+    }
+
+    &-posted {
+      width: 147px;
+    }
+  }
+}
+.swiper-pagination-bullet{
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  &:not(:last-child){
+    margin-right: 20px;
+  }
+}
+.swiper-pagination-bullet-active{
+  background-color:#17497A ;
+}
+.swiper-pagination{
+  margin-top: 20px;
+}

@@ -1,0 +1,31 @@
+.steps{
+  background-image: url('../images/dest/section-bg-white.png');
+  @extend %bg-contain;
+  background-position: 0 97%;
+  &__items{
+    gap:36px 74px;
+  }
+  &__subtitle{
+    max-width: 460px;
+    font: 400 20px / 23px $font;
+    margin-bottom: 20px;
+  }
+  &__descr{
+    font: 700 20px/ 23px $font;
+    margin-bottom: 33px;
+  }
+}
+.steps-item{
+  align-items: center;
+  width: 25%;
+  &__box{
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  &__text{
+    text-align: center;
+  }
+}

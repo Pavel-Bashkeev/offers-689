@@ -14,12 +14,13 @@
     font: 700 25px / 29px $font;
     margin-bottom: 8px;
     color: $white;
+    padding: 0 5px;
   }
 
   &__title {
     font: 700 80px / 80px $font;
     color: $white;
-
+    padding: 0 5px;
     &-text {
       font: 700 18px / 21px $font;
     }

@@ -1,0 +1,48 @@
+.benefits{
+  background-image: url('../images/dest/section-bg.png');
+  @extend %bg-contain;
+  background-position: 0 63%;
+  &__items{
+    padding: 0 30px;
+    counter-reset: item;
+    margin-bottom: 46px;
+  }
+  &-link{
+    max-width: 420px;
+  }
+}
+.benefits-item{
+  
+  
+  &:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  &:not(:last-child){
+    margin-bottom: 36px;
+  }
+  &__info{
+    text-align: center;
+    max-width: 215px;
+    color: $white;
+    &::before{
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      top:-30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font: 700 100px/100px 'Arial';
+      color: rgba($color: $white, $alpha: .2)
+    }
+  }
+  &__title{
+    font:700 18px/21px $font;
+
+  }
+  &__text{
+    font:400 18px/21px $font;
+  }
+  &__img{
+    width: 205px;
+  }
+}

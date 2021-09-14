@@ -1,0 +1,16 @@
+.footer{
+  background-color: #3b3c3e;
+  padding: 20px 0;
+  color: white;
+  font-size: 14px;
+  &-text{
+    margin-bottom: 5px;
+  }
+}
+.footer-link {
+  opacity: 0.5;
+  text-decoration: underline;
+  &:not(:last-child){
+    margin-bottom: 8px;
+  }
+}

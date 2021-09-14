@@ -1,0 +1,5 @@
+.application{
+  background-image: url('../images/dest/section-bg.png');
+  @extend %bg-contain;
+  background-position: 0 100%;
+}

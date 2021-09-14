@@ -1,0 +1,33 @@
+.order-steps{
+  padding: 70px 0 ;
+  background-color: #C2E1FF;
+  &__list{
+    margin-left: 15px;
+    position: relative;
+    z-index: 1;
+    &::before{
+      content:'';
+      position: absolute;
+      top: 20px;
+      left: 28px;
+      height: 90%;
+      width: 3px;
+      border-right: 3px dashed #3e5835;
+      z-index: -1;
+    }
+  }
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+  }
+  &__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 27px;
+  }
+  &__text{
+    font: 700 20px / 23px $font;
+  }
+}
