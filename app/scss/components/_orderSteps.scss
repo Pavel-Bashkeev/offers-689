@@ -29,5 +29,8 @@
   }
   &__text{
     font: 700 20px / 23px $font;
+    &--accent{
+      text-decoration: underline;
+    }
   }
 }

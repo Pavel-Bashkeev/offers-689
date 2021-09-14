@@ -12,9 +12,12 @@
     top: 20px;
     width: 120px;
   }
+  .benefits__items {
+    padding: 0 10px;
 
+}
   .benefits-item__img {
-    width: 170px;
+    width: 180px;
   }
 
   .footer-hero.hero {
@@ -65,6 +68,7 @@
   .product-list__item-text {
     max-width: 230px;
 }
+
 .product__title {
   margin-bottom: 30px;
 }
@@ -77,5 +81,43 @@
 .footer-hero.hero {
   background-position: 80% 0;
   background-size: 120%;
+}
+.reviews-slider {
+  padding: 0 10px;
+}
+}
+@media (max-width: 359px) {
+  .hero-header__title {
+    font: 700 60px/65px Roboto;
+}
+.benefits-item__img {
+  width: 150px;
+}
+.product-decor {
+  display: none;
+}
+.result-graph__text-item--4 {
+  right: 1%;
+}
+.result-graph__text-item--3 {
+  right: 22%;
+}
+.result-graph__text-item--1 {
+  left: 17%;
+}
+.hero-price__items {
+  padding: 165px 10px 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-price__decor {
+  left: 20px;
+  top: -37px;
+  width: 198px;
+}
+.hero-price__old {
+  font: 400 18px/17px Roboto;
+  margin-bottom: 0px;
 }
 }
